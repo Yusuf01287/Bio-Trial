@@ -1,0 +1,108 @@
+/* Reset & Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: #cbd6e0;
+    color: #1cca93;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #16a76f, #0083b0);
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px 0;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00b4db;
+}
+
+/* Konten utama */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Kartu (card) */
+.card {
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: -5 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 70%;
+    margin-bottom: 15px;
+}
+
+/* Daftar keahlian */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+}
+
+/* Bagian sosial media */
+.social {
+    margin-top: 10px;
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0083b0;
+    font-weight: bold;
+}
+
+.social a:hover {
+    color: #00b4db;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #16a76f;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
