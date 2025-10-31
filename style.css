@@ -9,7 +9,7 @@
 
 /* Header dan Navigasi dengan gradasi menyatu */
 header {
-    background: linear-gradient(135deg, #6a5acd, #00bcd4);
+    background: linear-gradient(135deg, #0ad2b0, #c401e6);
     color: white;
     text-align: center;
     padding: 40px 20px 10px 20px;
@@ -32,8 +32,9 @@ nav {
     display: flex;
     justify-content: center;
     gap: 25px;
-    background: linear-gradient(135deg, #6a5acd, #00bcd4);
+    background: linear-gradient(135deg, #0ad2b0, #c401e6);
     padding: 15px 0;
+    background: transparent;
     border-top: 1px solid rgba(255,255,255,0.3);
 }
 
@@ -122,4 +123,33 @@ footer {
     background-color: #f5f5f5;
     border-top: 1px solid #ddd;
     font-size: 0.9em;
+}
+
+/* Folder Style */
+.folder-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #e3f2fd;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 120px;
+    height: 100px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.folder:hover {
+    background: #bbdefb;
+    transform: translateY(-5px);
 }
