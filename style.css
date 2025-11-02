@@ -121,7 +121,7 @@ footer {
     text-align: center;
     padding: 15px;
     color: #777;
-    background-color: #f5f5f5;
+    background-color: #0beaba;
     border-top: 1px solid #ddd;
     font-size: 0.9em;
 }
@@ -207,9 +207,9 @@ footer {
   background-color: #f9f9f9;
 }
 
-.body {
+body {
       text-align: center;
-      background-color: #fafafa;
+      background-color: #11eeba;
       padding: 20px;
     }
     img {
@@ -229,3 +229,44 @@ footer {
       text-decoration: none;
       color: #007bff;
     }
+
+  .body {
+    margin: 0;
+    overflow: hidden;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #8509f1, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff);
+    background-size: 300% 300%;
+    animation: bgMove 15s ease infinite;
+  }
+
+  /* Animasi gerakan lembut pada latar belakang */
+  @keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Partikel pastel */
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.4;
+    filter: blur(4px);
+    animation: float 6s ease-in-out infinite alternate;
+  }
+
+  /* Posisi dan ukuran partikel */
+  .p1 { width: 100px; height: 100px; background: #8509f1; top: 20px; left: 30px; animation-delay: 0s; }
+  .p2 { width: 60px; height: 60px; background: #ffd6a5; bottom: 40px; right: 60px; animation-delay: 1s; }
+  .p3 { width: 80px; height: 80px; background: #fdffb6; top: 60px; right: 90px; animation-delay: 2s; }
+  .p4 { width: 120px; height: 120px; background: #caffbf; bottom: 70px; left: 40px; animation-delay: 3s; }
+  .p5 { width: 50px; height: 50px; background: #9bf6ff; top: 200px; right: 200px; animation-delay: 4s; }
+  .p6 { width: 90px; height: 90px; background: #bdb2ff; bottom: 200px; left: 200px; animation-delay: 5s; }
+
+  /* Animasi gerak lembut */
+  @keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(15px, -20px) scale(1.1); }
+    100% { transform: translate(-10px, 15px) scale(1); }
+  }
+
